@@ -1,4 +1,4 @@
-Cellpose
+Cellpose_jesse
 Images Carolina
 Microscopy Data Huntingtin aggregates
 Microscopy explanation
@@ -7,3 +7,4 @@ tiff_files
 .vscode
 env-afstudeer
 Instanseg
+.conda
