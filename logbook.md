@@ -1,3 +1,29 @@
+Samenvatting
+• Introductie
+ - Context, Probleem, Bestaand werk, Gat, Voorstel
+• Achtergrond
+- Basiskennis (literatuur)
+- State of the art (literatuur)
+- Stakeholder-analyse
+• Requirements
+- Product (inclusief gebruikersinterface)
+- Model
+• Prototype
+- Idee generatie en value proposition
+- Flow diagrams en AI breakdown
+- Gebruikersonderzoek (empathy map bijvoorbeeld)
+- (Paper) Prototype
+• Model
+- Methodologie (dataset, architecture, ...)
+- Resultaten (performance en andere kwaliteitsmaten)
+- Conclusie
+• Discussie
+- Implicaties, Future work, Aanbevelingen
+- Terugkomen op requirements
+• Bronnenlijst (overweeg het gebruik van een referentiemanager
+1 https://www.ieee.org/conferences/publishing/templates.html
+2 https://www.acm.org/publications/authors/submissions
+
 
 # Installing Cellpose
 in order to download the cellpose envoriement I follow this instructures [cellpose link](https://cellpose.readthedocs.io/en/latest/index.html) 
@@ -76,4 +102,32 @@ Vragen naar Caroline
     3. Open AggreCount
     4. get results for CSV file (2d)
 
-* Wat is your 
+* Wat is your current metodology?
+
+
+
+## 28.04.2025
+### Todo List
+1. Write about Wyh 3d is important. 
+2. (prototype) Idea generation and value proposition
+3. Flow diagrams
+4. AI breakdown
+4. User research (e.g. empathy map)
+5. (Paper) Prototype
+6. which design pattern will you use and wyh (look at the google and choose one of them)
+
+o Design, Development and Results of a prototype
+• Design and development are part of the methods
+• The prototype itself is a result
+• For your paper, don't include theories you can't defend with source
+o HvA Master Applied AI Design Class is not a source
+
+
+
+
+
+29.04.2025
+1. Look at one more time to requirements 
+    * Product (inclusief gebruikersinterface)
+    * Model
+2. 
