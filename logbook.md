@@ -75,7 +75,7 @@ In the attached PDF file, I worked with a .lif image and tried to identify prote
 
 
 
-## 24.04.2025
+# 24.04.2025
 1. **Requiremernts:** Look at the lessons notes and create and requirements.
 2. **Prototype:** Look at the lessons notes. And bring something to requirements.
 3. 
@@ -106,8 +106,8 @@ Vragen naar Caroline
 
 
 
-## 28.04.2025
-### Todo List
+# 28.04.2025
+## Todo List
 1. Write about Wyh 3d is important. 
 2. (prototype) Idea generation and value proposition
 3. Flow diagrams
@@ -123,10 +123,53 @@ o Design, Development and Results of a prototype
 o HvA Master Applied AI Design Class is not a source
 
 
+## 📄 Value Proposition Canvas
+### Customer Jobs
+1. Detect and quantify cellular structures in fluorescence microscopy images.
+2. Identify and measure aggregates within individual cells.
+3. Obtain consistent and reproducible results across different samples.
+4. Minimize manual workload and reduce analysis time.
 
+### Pains
+1. Lack of publicly available annotated datasets for microscopy images.
+2. Very few or no open-source solutions available in the current literature.
+3. Absence of ground truth datasets to validate analysis methods.
+4. Challenges in segmenting small, dim aggregates.
+
+
+### Gains
+1. Faster and automated microscopy data analysis.
+2. Improved accuracy and reliability in detecting and quantifying structures.
+3. Objective, quantitative results that support research conclusions.
+4. Easy-to-use workflows with minimal manual input.
+5. More scalable and reproducible research processes.
+
+### 🛠 Value Map
+### Products & Services
+1. Automated cell detection algorithms.
+2. Aggregate detection and quantification tools (position, size, count analysis).
+3. Image preprocessing modules for noise reduction and contrast enhancement.
+4. User-friendly analysis interface with adjustable parameters.
+5. A complete analysis pipeline compatible with Jupyter Notebook or similar platforms.
+
+### Pain Relievers
+1. Find an open-source annotated dataset to overcome the lack of available labeled data for training and validation.
+2. Create a self-solution by combining one or more existing methods developed for related problems and applying them to this specific case 
+3. Optimizing preprocessing steps for noisy and low-contrast images.
+
+### Gain Creators
+1. Major time savings by eliminating manual annotation.
+2. Reliable detection even for small and weak aggregates.
+3. Higher-quality, reproducible data supporting robust research.
+4. Accelerated and streamlined research workflows.
 
 
 29.04.2025
+1. contunie to yerterday's job
+
+
+
+30.04.2025
 1. Look at one more time to requirements 
     * Product (inclusief gebruikersinterface)
     * Model
