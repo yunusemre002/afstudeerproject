@@ -271,19 +271,13 @@ Python has a problem, when it works with the .lif file. it can open it but it st
 
 # 12.05.2025
 ## Todo List
-1. Flow diagrams (current + happy)
+~~1. Flow diagrams (current + happy)~~
 2. AI breakdown
 3. User research (e.g. empathy map) ?? not hard just 10 min
 4. Level of Automation ??
-5. which design pattern will you use and wyh (look at the google and choose one of them)
+5. Which design pattern will you use and wyh (look at the google and choose one of them)
 6. Which model have been used (cellpose has been used en last version.) Nuclei and cellbody  detection currrent pc and de process time)
 5. De library and the technologies which is used (napari(for 3d visualizations), skime, cellpose(cellbody, nuclei quantification))
-
-o Design, Development and Results of a prototype
-• Design and development are part of the methods
-• The prototype itself is a result
-• For your paper, don't include theories you can't defend with source
-o HvA Master Applied AI Design Class is not a source
 
 ## Paper Prototype Base
 ![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
@@ -301,3 +295,21 @@ o HvA Master Applied AI Design Class is not a source
 
 ## Happy Flow Diagram
 ![Happy_flow](/photos/happy_flow.png)
+
+
+
+# 13.05.25
+## To Do list 2. AI breakdown
+1. Which design pattern will you use and wyh (look at the google and choose one of them)
+2. Which model have been used (cellpose has been used en last version.) Nuclei and cellbody  detection currrent pc and de process time)
+3. De library and the technologies which is used (napari(for 3d visualizations), skime, cellpose(cellbody, nuclei quantification))
+4. User research (e.g. empathy map) ?? not hard just 10 min
+5. Level of Automation ??
+
+
+## Google Design pattern
+**Adapt AI with user feedback**
+Adapt your AI system with feedback from people, during individual interactions and over time.
+Human-AI interactions are a bidirectional feedback loop. AI learns from users to personalize their experiences, and users adapt their behaviors and workflows in response to AI outcomes. Set up feedback mechanisms that can be used to interpret AI outcomes, and account for changes introduced by AI.
+
+Cellpose has a adjustable parameter for example diameter or (other two parameter) i can show to user that and explanation with it and i can say if you are not happy the result change the parameter and try one more time. it can be. for example if the model detect the cellkern too big just work with smaal diamaeter but keep in mind it cost time. 
