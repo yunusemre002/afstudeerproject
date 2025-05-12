@@ -241,7 +241,7 @@ o HvA Master Applied AI Design Class is not a source
 - Apply 3D denoising and contrast normalization  
 - Preserve all Z-slices — no projection used
 
-### 5. (Optional) Cell Segmentation
+### 5. Cell Segmentation
 - Use nuclear channel to detect and segment cell regions  
 - Enables per-cell aggregate quantification
 
@@ -295,3 +295,9 @@ o HvA Master Applied AI Design Class is not a source
 ![paper_prototipe_2_2](/photos/paper_prototype_2_2.jpeg)
 
 <!-- <img src="/photos/paper_prototype_1_1.jpeg" width="45%"> <img src="/photos/paper_prototype_2_2.jpeg" width="47%"> -->
+
+## Current Flow Diagram
+![current_flow](/photos/current_flow.png)
+
+## Happy Flow Diagram
+![Happy_flow](happy_flow.png)
