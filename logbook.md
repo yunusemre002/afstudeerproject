@@ -1,4 +1,5 @@
 ```conda activate napari-env```
+```ctrl+K V```
 Samenvatting
 • Introductie
  - Context, Probleem, Bestaand werk, Gat, Voorstel
@@ -272,9 +273,10 @@ Python has a problem, when it works with the .lif file. it can open it but it st
 ## Todo List
 1. Flow diagrams (current + happy)
 2. AI breakdown
-3. User research (e.g. empathy map)
-4. which design pattern will you use and wyh (look at the google and choose one of them)
-4. Which model have been used (cellpose has been used en last version.) Nuclei and cellbody  detection currrent pc and de process time)
+3. User research (e.g. empathy map) ?? not hard just 10 min
+4. Level of Automation ??
+5. which design pattern will you use and wyh (look at the google and choose one of them)
+6. Which model have been used (cellpose has been used en last version.) Nuclei and cellbody  detection currrent pc and de process time)
 5. De library and the technologies which is used (napari(for 3d visualizations), skime, cellpose(cellbody, nuclei quantification))
 
 o Design, Development and Results of a prototype
@@ -286,6 +288,10 @@ o HvA Master Applied AI Design Class is not a source
 ## Paper Prototype Base
 ![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
 ![paper_prototipe_1_2](/photos/paper_prototype_1_2.jpeg)
+
+
 ## Paper Prototype First feedback
 ![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
 ![paper_prototipe_2_2](/photos/paper_prototype_2_2.jpeg)
+
+<!-- <img src="/photos/paper_prototype_1_1.jpeg" width="45%"> <img src="/photos/paper_prototype_2_2.jpeg" width="47%"> -->
