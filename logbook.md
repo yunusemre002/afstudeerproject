@@ -300,4 +300,4 @@ o HvA Master Applied AI Design Class is not a source
 ![current_flow](/photos/current_flow.png)
 
 ## Happy Flow Diagram
-![Happy_flow](happy_flow.png)
+![Happy_flow](/photos/happy_flow.png)
