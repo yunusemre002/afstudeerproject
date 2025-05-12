@@ -216,17 +216,15 @@ o HvA Master Applied AI Design Class is not a source
 -------
 ## Current Flow
 1. Open Fiji
-2. Load the .lif file (3D fluorescence microscopy data)
+2. Load the .lif file (2D MAXprojection fluorescence microscopy data)
 3. Use AggreCount
-4. Let AggreCount select the most intense z-stacks
-5. Detect aggregates
-6. Export 2D results to a CSV file
-
+4. AggreCount detects aggregates
+5. Export 2D results to a CSV file
 
 
 ## Happy Flow
 
-### 1. Load `.lif` File
+### 1. Load `.tif` File
 - Import full multichannel 3D fluorescence microscopy data  
 - Supported via libraries like `bioformats` or `aicsimageio`
 
@@ -270,8 +268,24 @@ When you are try to anysis the foto of the cell
 Python has a problem, when it works with the .lif file. it can open it but it struggle to show correct order of the z-slices, it shows just rondom slices. Now i have a solition. it is just convert file to .tiff file. 
 
 
-# 30.04.2025
-1. Look at one more time to requirements 
-    * Product (inclusief gebruikersinterface)
-    * Model
-2. 
+# 12.05.2025
+## Todo List
+1. Flow diagrams (current + happy)
+2. AI breakdown
+3. User research (e.g. empathy map)
+4. which design pattern will you use and wyh (look at the google and choose one of them)
+4. Which model have been used (cellpose has been used en last version.) Nuclei and cellbody  detection currrent pc and de process time)
+5. De library and the technologies which is used (napari(for 3d visualizations), skime, cellpose(cellbody, nuclei quantification))
+
+o Design, Development and Results of a prototype
+• Design and development are part of the methods
+• The prototype itself is a result
+• For your paper, don't include theories you can't defend with source
+o HvA Master Applied AI Design Class is not a source
+
+## Paper Prototype Base
+![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
+![paper_prototipe_1_2](/photos/paper_prototype_1_2.jpeg)
+## Paper Prototype First feedback
+![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
+![paper_prototipe_2_2](/photos/paper_prototype_2_2.jpeg)
