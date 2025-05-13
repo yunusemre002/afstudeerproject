@@ -271,7 +271,7 @@ Python has a problem, when it works with the .lif file. it can open it but it st
 
 # 12.05.2025
 ## Todo List
-~~1. Flow diagrams (current + happy)~~
+1. Flow diagrams (current + happy)
 2. AI breakdown
 3. User research (e.g. empathy map) ?? not hard just 10 min
 4. Level of Automation ??
@@ -312,4 +312,97 @@ Python has a problem, when it works with the .lif file. it can open it but it st
 Adapt your AI system with feedback from people, during individual interactions and over time.
 Human-AI interactions are a bidirectional feedback loop. AI learns from users to personalize their experiences, and users adapt their behaviors and workflows in response to AI outcomes. Set up feedback mechanisms that can be used to interpret AI outcomes, and account for changes introduced by AI.
 
+---
+
 Cellpose has a adjustable parameter for example diameter or (other two parameter) i can show to user that and explanation with it and i can say if you are not happy the result change the parameter and try one more time. it can be. for example if the model detect the cellkern too big just work with smaal diamaeter but keep in mind it cost time. 
+
+---
+
+## Adaptive AI Through Feedback
+
+Our system design closely follows Google's *Adapt AI with user feedback* design pattern, which emphasizes the importance of creating bidirectional feedback loops between users and AI systems. This pattern encourages dynamic adjustment based on user interaction and evolving expectations.
+
+In our application, segmentation is first performed automatically using default Cellpose-SAM parameters. Immediately after, the user is presented with the result and prompted with:
+**"Didn’t get the result you expected?
+You can go back, adjust the settings, and try again for a better result."**
+
+
+This simple prompt initiates a lightweight feedback loop. Users are empowered to modify the `diameter` parameter, which controls the expected object size, and observe how the output changes. Although this form of feedback is implicit—users are not explicitly rating or scoring the results—it directly shapes the behavior of the system and adapts it to the user’s context and goals.
+
+To support a wide range of user expertise, we include a collapsible “Expert Settings” panel, where advanced parameters such as `flow_threshold` and `cellprob_threshold` can be adjusted. This structure aligns with Google's recommendation to support both short-term interaction-level adaptation and long-term personalization, without compromising usability.
+
+By encouraging iterative interaction and adaptation through meaningful user control, our system operationalizes the *Adapt AI with user feedback* principle in a practical and user-friendly way.
+
+
+SO update de paper prototype:
+1. Add feddback icon last page
+2. Add parameter settings 2. page
+
+
+### Technologies Used: Cellpose-SAM and Threshold-Based Aggregate Detection
+In this study, we utilized a combination of advanced segmentation and image processing techniques tailored for fluorescence microscopy of neural aggregates. The key components of our pipeline are as follows:
+
+### Cellpose-SAM for Cell Segmentation
+For segmenting both the cell bodies and nuclei, we used the latest Cellpose-SAM model. This model is a fusion of the original Cellpose deep learning-based segmentation framework with the Segment Anything Model (SAM) developed by Meta AI. SAM is a transformer-based model that can segment objects in images without requiring class-specific supervision. When combined with Cellpose, it becomes highly effective for biomedical data, where object shapes vary significantly and boundaries may be unclear.
+
+Cell Bodies were segmented from Channel 4 (C4) using Cellpose-SAM with an estimated diameter of 100 pixels.
+
+Cell Nuclei were segmented from Channel 1 (C1) with a diameter of 30 pixels.
+
+Each Z-slice of the 3D microscopy stack was processed independently, and Cellpose-SAM produced a binary mask for each frame. These masks were then reconstructed into a full 3D volume, enabling spatial analysis of cell structures. The use of SAM particularly improved segmentation accuracy in low-contrast and noisy regions.
+
+### Aggregate Detection via Thresholding
+Following the segmentation of cells, aggregate regions were identified using intensity-based thresholding on the relevant channels (e.g., Channel 2 for Huntington-related aggregates).
+
+Each Z-slice was processed individually.
+
+Various thresholding methods were explored (e.g., Otsu, adaptive, fixed percentile), but we selected a global fixed threshold, manually tuned to highlight only the bright, dense aggregate regions while minimizing background noise.
+
+Morphological operations (e.g., opening, closing) were applied to refine the binary masks.
+
+The resulting masks were assembled across Z-slices to reconstruct 3D aggregate volumes.
+
+### Application to Our Dataset
+The described techniques were applied to multichannel .tif microscopy images obtained from neuronal cultures.
+
+Cell body segmentation was performed on Channel 4, using a diameter of 100, processed slice-by-slice using Cellpose-SAM.
+
+Cell nucleus segmentation was carried out on Channel 1, with diameter set to 30.
+
+Each slice of the stack was independently processed to detect masks, which were then assembled into 3D representations using standard volumetric reconstruction techniques. This enabled both per-slice 2D analysis and full 3D visualization.
+
+Aggregate detection was performed on Channel 2, representing Huntington aggregates. A fixed global threshold was chosen after testing different methods, and 3D aggregate volumes were reconstructed.
+
+The pipeline allows inspection of each Z-slice individually (e.g., which aggregates lie inside or outside of cell boundaries), while also offering full 3D visualization of cell bodies, nuclei, and aggregates using tools like Napari, enabling intuitive interaction and validation.
+
+
+## Libraries and Tools
+
+The following libraries and tools were used to facilitate the segmentation, analysis, and visualization:
+
+Cellpose: The core library for segmentation, enabling the extraction of cell boundaries and the identification of structures like nuclei.
+
+SAM (Segment Anything Model): Leveraged for its ability to segment objects in the images, especially when class-specific labels were not available.
+
+Napari: A 3D image viewer built on top of Qt and PyQt, used for interactive visualization of the 3D models generated from the segmented cell bodies, nuclei, and aggregates. Napari provides an intuitive interface for zooming, rotating, and interacting with multi-dimensional data, and was key for analyzing results in 3D.
+
+NumPy & SciPy: Fundamental libraries for handling and processing large-scale image data (such as creating arrays from Z-slice stacks and performing image processing operations).
+
+Matplotlib: Used for visualizing 2D slice results and generating various plots to analyze the distribution of cell body and aggregate features across the dataset.
+
+scikit-image: A library for general image processing, including thresholding, morphological operations, and filtering.
+
+The combination of these libraries provides a comprehensive and efficient pipeline for processing and analyzing microscopy data.
+
+
+# 14.05.25
+## TODO List
+1. User research (e.g. empathy map) ?? not hard just 10 min
+2. Level of Automation ??
+3. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
+4. focuss on iterations and requariments
+5. Run it on 10 images with same color.
+
+
+
+
