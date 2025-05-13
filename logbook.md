@@ -1,6 +1,15 @@
+# LOGBOOK
+
+# First Results
+
+https://drive.google.com/drive/folders/1AnUnfZbJpZWdKvpxJOniLWIzyFzvSiDI?usp=drive_link
+
+# Some shotcuts
 ```conda activate napari-env```
 ```ctrl+K V```
-Samenvatting
+
+
+# Paper structure must follow
 • Introductie
  - Context, Probleem, Bestaand werk, Gat, Voorstel
 • Achtergrond
@@ -60,11 +69,10 @@ However, cell detection is currently not working well. I will focus on it.  Why 
 Until now, I’ve been collapsing the 3D data into a 2D image for easier processing. Do you think this is a valid method, or are there better alternatives for working with 3D data directly?
 In the attached PDF file, I worked with a .lif image and tried to identify protein aggregates. You can ignore the code sections — the photos are the most important part.  Do you think the last image reflects the main goal of the project?
 ```
-# literatuur reserch 
 
+# 23.04.2025 
+## Todo list
 
-# Todo list
-## 23.04.2025 
 1. Read expert workshop slides 
 2. Complete Introduction 
 3. Compelete Background 
@@ -402,7 +410,5 @@ The combination of these libraries provides a comprehensive and efficient pipeli
 3. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
 4. focuss on iterations and requariments
 5. Run it on 10 images with same color.
-
-
 
 
