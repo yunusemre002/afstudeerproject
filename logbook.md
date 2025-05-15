@@ -219,7 +219,11 @@ o HvA Master Applied AI Design Class is not a source
 3. Higher data quality and reproducibility for downstream research.  
 4. Streamlined workflows that accelerate scientific insight from microscopy images.
 
-![Value Proposition](photos/Value%20Proposition%20Canvas.png)
+### Value Proposition Canvas v0
+![Value Proposition](photos/value_proposition_canvas.png)
+
+### Value Proposition Canvas v1 (Last)
+![Value proposition v1](/photos/value_proposition_canvas_v1.png)
 
 
 -------
@@ -301,18 +305,22 @@ Python has a problem, when it works with the .lif file. it can open it but it st
 ## Current Flow Diagram
 ![current_flow](/photos/current_flow.png)
 
-## Happy Flow Diagram
+## Happy Flow Diagram Base
 ![Happy_flow](/photos/happy_flow.png)
 
+## Happy Flow Diagram V1
+Feedback loop added.
+![Happy_flow_v1](/photos/happy_flow_v1.png)
 
 
 # 13.05.25
-## To Do list 2. AI breakdown
+## To Do list 
 1. Which design pattern will you use and wyh (look at the google and choose one of them)
 2. Which model have been used (cellpose has been used en last version.) Nuclei and cellbody  detection currrent pc and de process time)
 3. De library and the technologies which is used (napari(for 3d visualizations), skime, cellpose(cellbody, nuclei quantification))
 4. User research (e.g. empathy map) ?? not hard just 10 min
 5. Level of Automation ??
+6. AI breakdown
 
 
 ## Google Design pattern
@@ -407,8 +415,10 @@ The combination of these libraries provides a comprehensive and efficient pipeli
 ## TODO List
 1. User research (e.g. empathy map) ?? not hard just 10 min
 2. Level of Automation ??
-3. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
-4. focuss on iterations and requariments
-5. Run it on 10 images with same color.
+3. AI breakdown
+4. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
+5. focuss on iterations and requariments
+6. Run it on 10 images with same color.
+
 
 
