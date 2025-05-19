@@ -420,5 +420,38 @@ The combination of these libraries provides a comprehensive and efficient pipeli
 5. focuss on iterations and requariments
 6. Run it on 10 images with same color.
 
+## Feedback from Bart
+- Run it on 10 images not just one image it is bias. 
+- All aggregates must be same color but different intencity with mening.
+
+
+
+# 19.05.25
+## TODO List
+1. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
+2. Focuss on iterations and requariments
+3. Run it on 10 images with same color.
+
+## feedback paper prototype
+1. Show the fotos of the input to user. to choose it.  
+
+## Feedback from Lamia:
+- [x] In the Introduction → mention Fiji and the imaris program in the Current section.  
+- [x] Remove the sub-question “preprocessing” part, keep only the steps. 
+    - [x] Answer this sub-question in the Methodology introduction.  
+- [ ] Evaluation part — only one person bias, discuss this.  
+- [ ] Explain what aggregate quantification means in Methodology — location, volume, count.  
+- [ ] Performance metrics — human evaluation by expert as GOLD STANDARD. Why? There’s no other option.  
+- [ ] Discussion on 3D aggregation is too specific:  
+  - [ ] Dataset  
+  - [ ] Methods — aggregate threshold part  
+- [x] AI automation level explained.  
+- [x] Remove “Idea proportion” texts, keep just a brief summary.  
+- [x] Ask Carolina about ethical concerns.  
+- [ ] Iteration — clarify that it’s a single iteration (before B4).  
+  - [ ] Mention timing details.  
+- [x] Stakeholder analysis from NOAH Leroy — make it clearer. Focus on biomedical researchers, CureQ Health Lab, all parts.  
+  - [x] Delete everything below this, last sentence is important.  
+- [x] Current flow included.
 
 
