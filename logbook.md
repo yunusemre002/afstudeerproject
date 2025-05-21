@@ -220,10 +220,10 @@ o HvA Master Applied AI Design Class is not a source
 4. Streamlined workflows that accelerate scientific insight from microscopy images.
 
 ### Value Proposition Canvas v0
-![Value Proposition](photos/value_proposition_canvas.png)
+![Value Proposition](photos/orginal_fotos/value_proposition_canvas.png)
 
 ### Value Proposition Canvas v1 (Last)
-![Value proposition v1](/photos/value_proposition_canvas_v1.png)
+![Value proposition v1](/photos/orginal_fotos/value_proposition_canvas_v1.png)
 
 
 -------
@@ -459,14 +459,16 @@ All of the feedback which is given from Lamia is done.
 
 # 21.05.25
 ## TODO List
-1. Iteration in the model section
-2. Requirements (model + product {+UI})
-3. teruggekomen op requirements in de discussie
-4. State of the art
-5. Redesign de model PART
+1. ~~Iteration in the model section~~
+2. ~~Requirements (model + product {+UI})~~
+3. ~~State of the art~~
+4. Teruggekomen op requirements in de discussie
+5. Redesign de model PART ?? Or ask it  to Lamia
 6. Conclusie
-7. Update the paper prototype 
+7. Update the Paper Prototype 
     - Add feddback icon last page, 
     - Add parameter settings 2. page
     - Show the fotos of the input to user to choose it.  (Le Roy)
 9. Run it on 10 images with same color. (Bart)
+
+![happy flow v2](/photos/orginal_fotos/happy_flow_v2.jpg)
