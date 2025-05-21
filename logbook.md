@@ -414,11 +414,10 @@ The combination of these libraries provides a comprehensive and efficient pipeli
 # 14.05.25
 ## TODO List
 1. User research (e.g. empathy map) ?? not hard just 10 min
-2. Level of Automation ??
-3. AI breakdown
-4. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
-5. focuss on iterations and requariments
-6. Run it on 10 images with same color.
+2. AI breakdown Level of Automation ??
+3. Update the paper prototype (Add feddback icon last page, Add parameter settings 2. page)
+4. focuss on iterations and requariments
+5. Run it on 10 images with same color.
 
 ## Feedback from Bart
 - Run it on 10 images not just one image it is bias. 
@@ -439,19 +438,35 @@ The combination of these libraries provides a comprehensive and efficient pipeli
 - [x] In the Introduction → mention Fiji and the imaris program in the Current section.  
 - [x] Remove the sub-question “preprocessing” part, keep only the steps. 
     - [x] Answer this sub-question in the Methodology introduction.  
-- [ ] Evaluation part — only one person bias, discuss this.  
-- [ ] Explain what aggregate quantification means in Methodology — location, volume, count.  
-- [ ] Performance metrics — human evaluation by expert as GOLD STANDARD. Why? There’s no other option.  
-- [ ] Discussion on 3D aggregation is too specific:  
-  - [ ] Dataset  
-  - [ ] Methods — aggregate threshold part  
+- [x] Evaluation part — only one person bias, discuss this.  
+- [x] Explain what aggregate quantification means in Methodology — location, volume, count.  
+- [x] Performance metrics — human evaluation by expert as GOLD STANDARD. Why? There’s no other option.  
+- [x] Discussion on 3D aggregation is too specific:  
+  - [x] Dataset  
+  - [x] Methods — aggregate threshold part  
 - [x] AI automation level explained.  
 - [x] Remove “Idea proportion” texts, keep just a brief summary.  
 - [x] Ask Carolina about ethical concerns.  
-- [ ] Iteration — clarify that it’s a single iteration (before B4).  
-  - [ ] Mention timing details.  
+- [x] Iteration — clarify that it’s a single iteration (before B4).  
+  - [x] Mention timing details.  
 - [x] Stakeholder analysis from NOAH Leroy — make it clearer. Focus on biomedical researchers, CureQ Health Lab, all parts.  
   - [x] Delete everything below this, last sentence is important.  
 - [x] Current flow included.
 
 
+All of the feedback which is given from Lamia is done.
+
+
+# 21.05.25
+## TODO List
+1. Iteration in the model section
+2. Requirements (model + product {+UI})
+3. teruggekomen op requirements in de discussie
+4. State of the art
+5. Redesign de model PART
+6. Conclusie
+7. Update the paper prototype 
+    - Add feddback icon last page, 
+    - Add parameter settings 2. page
+    - Show the fotos of the input to user to choose it.  (Le Roy)
+9. Run it on 10 images with same color. (Bart)
