@@ -472,3 +472,30 @@ All of the feedback which is given from Lamia is done.
 9. Run it on 10 images with same color. (Bart)
 
 ![happy flow v2](/photos/orginal_fotos/happy_flow_v2.jpg)
+
+# 22.05.2025
+1. Teruggekomen op requirements in de discussie
+2. Redesign de model PART ?? Or ask it  to Lamia
+3. Conclusie
+4. Update the Paper Prototype 
+    - Add feddback icon last page, 
+    - Add parameter settings 2. page
+    - Show the fotos of the input to user to choose it.  (Le Roy)
+5. Run it on 10 images with same color. (Bart)
+
+## 2'nd Feedback from Lamia
+1. [x] ~~Write more about ethics.~~
+2. [x] ~~Restructure the model.~~
+3. [x] Use consistent terms: label, annotation, unlabeled etc.
+  - [x] First Explain why annotation is important.
+- [x] Discussion
+  - [x] Highlight what you did well. Say what you achieved.
+    - [x] impackt of socacity
+  - [x] Mention what is missing. List weaknesses; why? 
+    - [x] dataset
+    - [x] pretrained model
+    - [x] importance of annotation
+  - [x] possible improvements.
+    - [x] future work
+- [ ] Resubmit the assignment form.
+
