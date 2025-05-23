@@ -292,25 +292,25 @@ Python has a problem, when it works with the .lif file. it can open it but it st
 5. De library and the technologies which is used (napari(for 3d visualizations), skime, cellpose(cellbody, nuclei quantification))
 
 ## Paper Prototype Base
-![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
-![paper_prototipe_1_2](/photos/paper_prototype_1_2.jpeg)
+![paper_prototipe-1_1](/photos/orginal_fotos/paper_prototype_1_1.jpeg)
+![paper_prototipe_1_2](/photos/orginal_fotos/paper_prototype_1_2.jpeg)
 
 
 ## Paper Prototype First feedback
-![paper_prototipe-1_1](/photos/paper_prototype_1_1.jpeg)
-![paper_prototipe_2_2](/photos/paper_prototype_2_2.jpeg)
+![paper_prototipe-1_1](/photos/orginal_fotos/paper_prototype_1_1.jpeg)
+![paper_prototipe_2_2](/photos/orginal_fotos/paper_prototype_2_2.jpeg)
 
 <!-- <img src="/photos/paper_prototype_1_1.jpeg" width="45%"> <img src="/photos/paper_prototype_2_2.jpeg" width="47%"> -->
 
 ## Current Flow Diagram
-![current_flow](/photos/current_flow.png)
+![current_flow](/photos/orginal_fotos/current_flow.png)
 
 ## Happy Flow Diagram Base
-![Happy_flow](/photos/happy_flow.png)
+![Happy_flow](/photos/orginal_fotos/happy_flow.png)
 
 ## Happy Flow Diagram V1
 Feedback loop added.
-![Happy_flow_v1](/photos/happy_flow_v1.png)
+![Happy_flow_v1](/photos/orginal_fotos/happy_flow_v1.png)
 
 
 # 13.05.25
