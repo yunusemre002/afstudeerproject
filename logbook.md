@@ -474,14 +474,13 @@ All of the feedback which is given from Lamia is done.
 ![happy flow v2](/photos/orginal_fotos/happy_flow_v2.jpg)
 
 # 22.05.2025
-1. Teruggekomen op requirements in de discussie
-2. Redesign de model PART ?? Or ask it  to Lamia
-3. Conclusie
-4. Update the Paper Prototype 
+1. ~~Redesign de model PART ?? Or ask it  to Lamia~~
+2. Conclusie
+3. Update the Paper Prototype 
     - Add feddback icon last page, 
     - Add parameter settings 2. page
     - Show the fotos of the input to user to choose it.  (Le Roy)
-5. Run it on 10 images with same color. (Bart)
+4. Run it on 10 images with same color(!). (Bart)
 
 ## 2'nd Feedback from Lamia
 1. [x] ~~Write more about ethics.~~
@@ -499,3 +498,5 @@ All of the feedback which is given from Lamia is done.
     - [x] future work
 - [ ] Resubmit the assignment form.
 
+# 26.05.2025
+1. Look at the mail of Carolina
