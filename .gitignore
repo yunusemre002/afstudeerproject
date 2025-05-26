@@ -12,4 +12,6 @@ codes_yunus/input
 codes_yunus/input/
 codes_joram
 *.tif
+*.lif
 *.mov
+*DS_Store
