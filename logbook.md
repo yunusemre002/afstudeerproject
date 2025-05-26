@@ -410,6 +410,26 @@ scikit-image: A library for general image processing, including thresholding, mo
 
 The combination of these libraries provides a comprehensive and efficient pipeline for processing and analyzing microscopy data.
 
+## Mental exercises and trials for a solution:
+
+### cellpose 3d
+It was considered and tested to detect both cells and nuclei using Cellpose 3D. However, it was experienced that the method did not work on a MacBook M1 (2020), likely due to the high GPU requirements. As a result, a Colab Pro account was used to run the process with a high-performance GPU. Even in this setup, cell and nucleus detection took more than an hour, totaling up to three hours for full processing. Given the lengthy processing time and the dependency on high-end GPUs, it was concluded that this method would not be feasible for the current workflow and impractical to run in different environments. Therefore, this approach was abandoned.
+
+### Threshold Methods for Aggregate Detection
+In the aggregate detection step, various thresholding techniques were explored to identify potential aggregate regions based on intensity differences in the microscopy images. Several well-established methods from the literature were tested, including:
+
+- **Otsu Thresholding**  
+- **Triangle Method**  
+- **Mean Thresholding**  
+- **Minimum Thresholding**
+
+Although these methods are commonly used in biomedical image analysis, they did not perform consistently well on our dataset. The heterogeneity in image brightness, contrast, and aggregate density across different samples limited the effectiveness of these thresholding strategies.
+
+As a result, a **general thresholding approach** was adopted. In this method, a global thresholding algorithm is applied, but the threshold value itself is user-adjustable. This parameter can be fine-tuned via the user interface (UI) for each image, allowing for better adaptability to the varying conditions present in individual samples.
+
+This solution provides a flexible balance between automation and manual control, helping to accommodate sample variability while maintaining usability.
+
+
 
 # 14.05.25
 ## TODO List
@@ -499,4 +519,5 @@ All of the feedback which is given from Lamia is done.
 - [ ] Resubmit the assignment form.
 
 # 26.05.2025
-1. Look at the mail of Carolina
+1. Download 20 fotos and convert it to .tif file 
+2. Look at the mail of Carolina
