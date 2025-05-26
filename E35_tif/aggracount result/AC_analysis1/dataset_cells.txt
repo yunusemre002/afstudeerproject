@@ -1,0 +1,3 @@
+File	Nuclei	Aggregates	Aggregate area	Avg aggregate size	Cytosolic aggregates	Cytosolic agg area	Avg cyt agg size	Perinuclear aggregates	Perinuclear agg area	Avg peri agg size	Nuclear aggregates	Nuclear agg area	Avg nuc agg size	Largest perinuclear agg	Area	Mean	StdDev
+20240312_CKR_Exp35_STHdhQ97HA_96h_+MG132_CCT1_635P_HA_580_A11_460L_1.tif	3	6	2.245	0.374	0	0	NaN	4	1.757	0.439	2	0.488	0.244	0.586	31341.749	108.249	436.614
+20240312_CKR_Exp35_STHdhQ97HA_96h_+MG132_CCT1_635P_HA_580_A11_460L_1.tif	1	14	15.975	1.141	0	0	NaN	5	11.583	2.317	9	4.392	0.488	7.255	1764.384	263.780	899.010

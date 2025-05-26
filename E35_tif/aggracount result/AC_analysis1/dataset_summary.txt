@@ -1,0 +1,2 @@
+File	Cells	Aggregates per cell	Aggregate area per cell	Avg aggregate size	Cells with aggregates	% cells with aggregates	Cells with aggresome	% cells with aggresome	% aggs perinuclear	% aggs cytosolic	% aggs nuclear	Perinuclear aggregates per cell	Perinuclear agg area per cell	Cytosolic aggregates per cell	Cytosolic agg area per cell	Nuclear aggregate per cell	Nuclear agg area per cell
+20240312_CKR_Exp35_STHdhQ97HA_96h_+MG132_CCT1_635P_HA_580_A11_460L_1.tif	4	5	4.555	0.911	4	1	1	0.250	0.450	0	0.550	2.250	3.335	0	0	2.750	1.220

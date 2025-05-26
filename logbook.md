@@ -519,5 +519,5 @@ All of the feedback which is given from Lamia is done.
 - [ ] Resubmit the assignment form.
 
 # 26.05.2025
-1. Download 20 fotos and convert it to .tif file 
+1. ~~Download 20 fotos and convert it to .tif file~~
 2. Look at the mail of Carolina

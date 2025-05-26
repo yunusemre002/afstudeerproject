@@ -1,0 +1,93 @@
+Analysis output
+All data files are saved as tab-delimited .txt files.
+These may be easily imported into excel or another data processing software.
+In addition to the data tables described below, ROIs for each image are saved as
+.zip files within the AC_analysis folder. Each ROI zip file contains ROIs for cells, nuclei, and aggregates
+in that order.
+
+Dataset_summary
+Summary data by image
+	File – Filename
+	Cells – Number of cells imaged (uses # of nuclei)
+	Aggregates per cell – Total aggregates in image divided by total number of cells (nuclei)
+	Aggregate area per cell – Total aggregate area in image divided by total number of cells
+	Avg aggregate size – Total aggregate area divided by total aggregates
+	Cells with aggregates* – Total number of cells with any type of aggregate
+	% cells with aggregates* – Percentage of all cells with any type of aggregate
+	Cells with aggresome* – Total number of cells with an aggregate above the user defined size cutoff within the perinuclear zone (aggresome)
+	% cells with aggresome* – Percentage of all cells with an aggregate above the user defined size cutoff within the perinuclear zone (aggresome)
+	Total aggresomes** - Total number of aggresomes in the image
+	% aggs perinuclear – Perinuclear aggregates divided by total aggregates
+	% aggs cytosolic – Cytosolic aggregates divided by total aggregates
+	% aggs nuclear – Nuclear aggregates divided by total aggregates
+	Perinuclear aggregates per cell – Total perinuclear aggregates divided by total cells (nuclei)
+	Perinuclear aggregate area per cell – Total perinuclear aggregate area divided by total cells (nuclei)
+	Cytosolic aggregates per cell – Total cytosolic aggregates divided by total cells (nuclei)
+	Cytosolic aggregate area per cell – Total cytosolic aggregate area divided by total cells (nuclei)
+	Nuclear aggregates per cell – Total nuclear aggregates divided by total cells (nuclei)
+	Nuclear aggregate area per cell – Total nuclear aggregate area divided by total cells (nuclei)
+
+Dataset_cells*
+Summary data by cell
+	File – Filename of the image that contains the cell
+	Nuclei – Number of nuclei contained within a cell ROI
+	Aggregates – Total number of aggregates within a cell
+	Aggregate area – Total aggregate area within a cell (um^2)
+	Avg aggregate size – Total aggregates within the cell divided by total aggregate area within the cell
+	Cytosolic aggregates – Total number of cytosolic aggregates within a cell
+	Cytosolic agg area – Total cytosolic aggregate area within a cell
+	Avg cyt agg size - Average cytosolic aggregate size
+	Perinuclear aggregates – Total number of perinuclear aggregates within a cell
+	Perinuclear agg area – Total perinuclear aggregate area within a cell
+	Avg peri agg size - Average perinuclear aggregate size
+	Nuclear aggregates – Total number of nuclear aggregates within a cell
+	Nuclear agg area – Total nuclear aggregate area within a cell
+	Avg nuc agg size - Average nuclear aggregate size
+	Largest perinuclear agg - Size of the largest aggregate in the perinuclear zone
+	Area – Total area of a cell ROI
+	Mean – Mean fluorescent intensity from a cell ROI
+	StDev – Standard deviation of fluorescent intensity from a cell ROI
+
+Dataset_aggregates
+Summary data by aggregate
+	File – Filename of image that contains the aggregate
+	Location – Cellular compartment of an aggregate (nuclear, perinuclear, cytosolic)
+	Distance – Distance in pixels between the nearest edge of an aggregate to a nucleus ROI
+	Area – Area of the aggregate
+	Mean – Mean fluorescent intensity from aggregate ROI
+	StDev – Standard deviation of the fluorescent intensity from aggregate ROI 
+
+‘Image name’_analysis
+Summary data for a specific image. Contains data for both cell and aggregate ROIs
+	Class – Classification of ROI: cell, aggregate, aggresome
+	Cell # - Cell ID that links aggregates to cells
+	Location – Subcellular location of aggregates (cytosolic, perinuclear, nuclear). Cell ROIs will be labeled “NA”
+	Area – Area of a ROI
+	Mean – Mean fluorescence intensity of a ROI
+	StDev – Standard deviation of fluorescence intensity of a ROI
+	Nuclei* – Number of nuclei contained within a cell ROI
+	Aggregate ROIs will have “0” in this column
+	Aggregates* – Total number of aggregates in a cell
+	Aggregate ROIs will have “0” in this column
+	Aggregate area* – Total sum of aggregate area in a cell
+	Aggregate ROIs will have “0” in this column
+	Cytosolic agg* – Total number of cytosolic aggregates in a cell
+	Aggregate ROIs will have “0” in this column
+	Cytosolic agg area* – Total sum of cytosolic aggregate area in a cell
+	Aggregate ROIs will have “0” in this column
+	Perinuclear agg* – Total number of perinuclear aggregates in cell
+	Aggregate ROIs will have “0” in this column
+	Perinuclear agg area* – Total sum of perinuclear aggregate area in a cell
+	Aggregate ROIs will have “0” in this column
+	Nuclear agg* – Total number of nuclear aggregates in a cell
+	Aggregate ROIs will have “0” in this column
+	Nuclear agg area* – Total sum of nuclear aggregate area in a cell
+	Aggregate ROIs will have “0” in this column
+	Aggresomes* – Total number of aggresomes in a cell
+	Aggregate ROIs will have “0” in this column
+	Aggresome area* – Total aggresome area in a cell
+	Aggregate ROIs will have “0” in this column
+	Distance – Aggregate distance in pixels from a nucleus ROI perimeter
+	Cell ROIs will have “0” in this column
+*designates fields or data tables that are only present in analyses that use cell ROIs
+** designates fields that are only present in analyses that do not use cell ROIs

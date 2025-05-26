@@ -1,0 +1,23 @@
+Variable	Value
+Lower	15000.000
+Upper	65535.000
+perinuclear distance	10.000
+aggresome size	4.000
+minimum aggregate size	0.200
+maximum aggregate size	20.000
+minimum nuclei size	50.000
+nuclei strictness	5.000
+minimum cell size	75.000
+cell strictness	5.000
+nuclei channel	1.000
+nuclei stack	1.000
+nuclei frame	1.000
+aggregate channel	1.000
+aggregate stack	1.000
+aggregate frame	1.000
+cell channel	1.000
+cell stack	1.000
+cell frame	1.000
+Find cells?	1.000
+Segmentation?	NaN
+Batch mode	0.000
