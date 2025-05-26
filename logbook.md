@@ -521,3 +521,13 @@ All of the feedback which is given from Lamia is done.
 # 26.05.2025
 1. ~~Download 20 fotos and convert it to .tif file~~
 2. Look at the mail of Carolina
+
+
+
+Theese two parameter will be adjustable: But this combination will be default value. it looks more coreect than other values for input images. 
+```
+threshold = 0.55 * np.max(slice_img)
+clean_mask = morphology.remove_small_objects(bright_spots, min_size=9) # Bu parametrede degistirilebilir olsun.
+```
+  - threshold: 55  (0-100)
+  - min_size: 9 (0-20)
