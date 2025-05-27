@@ -523,7 +523,7 @@ All of the feedback which is given from Lamia is done.
 2. Look at the mail of Carolina
 
 
-
+## New UI desicions 
 Theese two parameter will be adjustable: But this combination will be default value. it looks more coreect than other values for input images. 
 ```
 threshold = 0.55 * np.max(slice_img)
@@ -531,3 +531,21 @@ clean_mask = morphology.remove_small_objects(bright_spots, min_size=9) # Bu para
 ```
   - threshold: 55  (0-100)
   - min_size: 9 (0-20)
+
+
+# 27.05.2025
+1. Look at the mail of Carolina
+  - Is it also possible to include the intensity (for each channel) within each volume? That would be amazing
+  - Add annotations as… location within the cell (for example, if signal of aggregate colocalizes with signal of nucleus, nuclear localization)
+  - In aggrecount there are some criteria that you could use as a base for cellular localization, as for example, the perinuclear region, ect
+  - Including annotation regarding the shape of the aggregates (circular, elongated, etc)
+  - In the attachment I also included a figure in which there are some regions in the cells annotated as aggregate… but that is not an aggregate I believe, although the signal is very strong. I indicated with the white circles. This happens  because some cells express more mHTT than others and it is hard to “normalize” the signal to all cells. ~~Is there a way to train the algorithm to not recognize this regions as aggregates?~~
+
+## Evaluation of Cellpose on Additional Images
+Cellpose has started to be tested on other images as well. It was observed that the detection of nuclei was not very accurate on these additional images. Moreover, in the new images, the number of cells in the CCT1 channel was not equal to the number of cells in the aggregate channel. It was also noted that the CCT1 channel used for detecting cell bodies contained more complex and a greater number of cells compared to the aggregate channel. Based on these observations, it was considered that performing both nuclei and cell body detection on the aggregate channel might be more effective. This way, only the nuclei and cell bodies associated with the aggregates would be detected. However, the results showed that Cellpose still did not perform well in detecting nuclei.
+
+### Channel 0
+![Channel 0](photos/for_logbook/z5-c0.png)
+### Channel 2
+![Channel 2](photos/for_logbook/z5-c2.png)
+
