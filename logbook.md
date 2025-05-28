@@ -552,11 +552,11 @@ Cellpose has started to be tested on other images as well. It was observed that 
 
 # 28.05.2025
 1. Look at the mail of Carolina
-  - Is it also possible to include the intensity (for each channel) within each volume? That would be amazing
-  - Add annotations as… location within the cell (for example, if signal of aggregate colocalizes with signal of nucleus, nuclear localization)
-  - In aggrecount there are some criteria that you could use as a base for cellular localization, as for example, the perinuclear region, ect
-  - Including annotation regarding the shape of the aggregates (circular, elongated, etc)
-  - In the attachment I also included a figure in which there are some regions in the cells annotated as aggregate… but that is not an aggregate I believe, although the signal is very strong. I indicated with the white circles. This happens  because some cells express more mHTT than others and it is hard to “normalize” the signal to all cells. ~~Is there a way to train the algorithm to not recognize this regions as aggregates?~~
+  - ~~Is it also possible to include the intensity (for each channel) within each volume? That would be amazing~~
+  - ~~Add annotations as… location within the cell (for example, if signal of aggregate colocalizes with signal of nucleus, nuclear localization)~~
+  - ~~In aggrecount there are some criteria that you could use as a base for cellular localization, as for example, the perinuclear region, ect~~
+  - ~~Including annotation regarding the shape of the aggregates (circular, elongated, etc)~~
+  - ~~In the attachment I also included a figure in which there are some regions in the cells annotated as aggregate… but that is not an aggregate I believe, although the signal is very strong. I indicated with the white circles. This happens  because some cells express more mHTT than others and it is hard to “normalize” the signal to all cells.~Is there a way to train the algorithm to not recognize this regions as aggregates?~~
 
 ??
 The dataset contains 20 images with 10 z-slices and 3 channels (cell, nuclei, aggregate), resulting in a total of 600 individual images.
@@ -651,3 +651,77 @@ $$
 - This metric shows how common each error type is among all expert comments.
 - It provides a simple quantitative measure of segmentation issues from qualitative feedback.
 
+
+---
+## Oplossing voor de laatste vraag van Caroline?
+Initially, I considered applying a new threshold based on aggregate size (in pixel area) as a potential solution. However, this approach is ineffective, since some true aggregates can be larger than the regions falsely identified as aggregates. So there is no solution for now. The treshold of the aggregate will be adjustable it can be solve it. 
+
+---
+## Put theese in to the colabs code:
+
+### Aggregate Analysis Features Explained
+
+- **z_slice**  
+  The index of the Z-slice where the aggregate is located in the 3D image stack.
+
+- **aggregate_label**  
+  Unique identifier (label) of the aggregate in that slice, assigned during labeling.
+
+- **location**  
+  Cellular location of the aggregate:  
+  - `nuclear`: Inside the nucleus  
+  - `perinuclear`: Around the nucleus (within a specified margin)  
+  - `cytoplasmic`: In the cytoplasm (outside nucleus and perinuclear region)
+
+- **eccentricity**  
+  Measures how elongated the aggregate shape is:  
+  - 0 means a perfect circle  
+  - 1 means a highly elongated (line-like) shape
+
+- **solidity**  
+  Compactness of the aggregate shape, calculated as area divided by the convex hull area:  
+  - Values close to 1 indicate a solid shape without indentations  
+  - Lower values indicate concave or irregular shapes
+
+- **circularity**  
+  Indicates how circular the aggregate is, calculated as:  
+  \( 4 \pi \times \frac{\text{area}}{\text{perimeter}^2} \)  
+  - 1 means a perfect circle  
+  - Values closer to 0 indicate irregular shapes
+
+- **overlap_nucleus**  
+  Proportion (from 0 to 1) of the aggregate overlapping with the nucleus mask.
+
+- **overlap_perinuclear**  
+  Proportion (from 0 to 1) of the aggregate overlapping with the perinuclear region mask.
+
+---
+
+# 29.05.25
+## Todo
+1. ~~Create 3d nuclei napari with .npy files: it is done but i m confuced a little bit. anyway it is a point of the visualization.~~
+2. Put the code above in to the colabs code
+
+
+
+## Update on the evaluation table
+Noah wijheimer said thad the approved is unclear. So it is removed. 
+
+ | No | Image ID | Z-slice | Cell Segmentation Score (1–5) | Cell Errors           | Nuclei Segmentation Score (1–5) | Nuclei Errors         | Aggregate Segmentation Score (1–5) | Aggregate Errors         | Comments              |
+|----|----------|---------|-------------------------------|-----------------------|---------------------------------|-----------------------|------------------------------------|-------------------------|-----------------------|
+| 1  | IMG_001  | 1       | 4                             | Missing segments      | 2                               | Misaligned masks      | 5                                  | None                    | Slice 1 good for cell |
+| 2  | IMG_001  | 2       | 5                             | None                  | 4                               | None                  | 4                                  | Oversegmentation        | Slight blur on nuclei |
+| 3  | IMG_001  | 3       | 2                             | Misaligned masks      | 5                               | Blurred               | 1                                  | Missing segments        | Poor quality slice    |
+| …  | …        | …       | …                             | …                     | …                               | …                     | …                                  | …                       | …                     |
+| 10 | IMG_020  | 10      | 4                             | None                  | 5                               | None                  | 5                                  | None                    | All good              |
+
+
+
+or
+
+| No | Image ID | Z-slice | Cell Score (1–5) | Missing Segments (Cell) | Oversegmentation (Cell) | Misaligned Masks (Cell) | Blurred/Low Quality (Cell) | Nuclei Score (1–5) | Missing Segments (Nuclei) | Oversegmentation (Nuclei) | Misaligned Masks (Nuclei) | Blurred/Low Quality (Nuclei) | Aggregate Score (1–5) | Missing Segments (Aggregate) | Oversegmentation (Aggregate) | Misaligned Masks (Aggregate) | Blurred/Low Quality (Aggregate) | Comments           |
+|----|----------|---------|------------------|-------------------------|------------------------|------------------------|----------------------------|--------------------|---------------------------|--------------------------|--------------------------|------------------------------|----------------------|-----------------------------|------------------------------|------------------------------|--------------------------------|--------------------|
+| 1  | IMG_001  | 1       | 4                | Yes                     | No                     | No                     | No                         | 2                  | No                        | No                       | Yes                      | No                           | 5                    | No                          | No                           | No                           | No                             | Slice 1 good       |
+| 2  | IMG_001  | 2       | 5                | No                      | No                     | No                     | No                         | 4                  | No                        | No                       | No                       | No                           | 4                    | No                          | Yes                          | No                           | No                             | Slight blur on nuclei |
+| 3  | IMG_001  | 3       | 2                | No                      | No                     | Yes                    | No                         | 5                  | No                        | No                       | No                       | Yes                          | 1                    | Yes                         | No                           | No                           | No                             | Poor quality slice  |
+|... | ...      | ...     | ...              | ...                     | ...                    | ...                    | ...                        | ...                | ...                       | ...                      | ...                      | ...                          | ...                  | ...                         | ...                          | ...                          | ...                            | ...                |
