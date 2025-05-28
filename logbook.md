@@ -592,21 +592,21 @@ This form is used to evaluate the quality of segmentation for **Cells**, **Nucle
 
 - **Cell:**
 
-\[
+$$
 \text{Approval Rate}_{\text{cell}} = \frac{\text{Number of "Yes" for Cell Approved}}{\text{Total Number of Images}}
-\]
+$$
 
 - **Nuclei:**
 
-\[
+$$
 \text{Approval Rate}_{\text{nuclei}} = \frac{\text{Number of "Yes" for Nuclei Approved}}{\text{Total Number of Images}}
-\]
+$$
 
 - **Aggregate:**
 
-\[
+$$
 \text{Approval Rate}_{\text{aggregate}} = \frac{\text{Number of "Yes" for Aggregate Approved}}{\text{Total Number of Images}}
-\]
+$$
 
 ---
 
@@ -614,21 +614,21 @@ This form is used to evaluate the quality of segmentation for **Cells**, **Nucle
 
 - **Cell:**
 
-\[
+$$
 \text{Mean Score}_{\text{cell}} = \frac{\sum \text{Cell Scores}}{\text{Total Number of Images}}
-\]
+$$
 
 - **Nuclei:**
 
-\[
+$$
 \text{Mean Score}_{\text{nuclei}} = \frac{\sum \text{Nuclei Scores}}{\text{Total Number of Images}}
-\]
+$$
 
 - **Aggregate:**
 
-\[
+$$
 \text{Mean Score}_{\text{aggregate}} = \frac{\sum \text{Aggregate Scores}}{\text{Total Number of Images}}
-\]
+$$
 
 ---
 ### Expert Comments-Based Error Frequency Calculation
@@ -642,10 +642,6 @@ This form is used to evaluate the quality of segmentation for **Cells**, **Nucle
 - No issues / Clear segmentation  
 
 To evaluate segmentation quality based on expert comments, calculate the frequency of each error type as follows:
-
-\[
-\text{Frequency}_{\text{error type}} = \frac{\text{Number of comments mentioning error}}{\text{Total number of comments}}
-\]
 
 $$
 \text{Frequency}_{\text{error type}} = \frac{\text{Number of comments mentioning error}}{\text{Total number of comments}}
