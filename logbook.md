@@ -647,6 +647,11 @@ To evaluate segmentation quality based on expert comments, calculate the frequen
 \text{Frequency}_{\text{error type}} = \frac{\text{Number of comments mentioning error}}{\text{Total number of comments}}
 \]
 
+$$
+\text{Frequency}_{\text{error type}} = \frac{\text{Number of comments mentioning error}}{\text{Total number of comments}}
+$$
+
+
 - This metric shows how common each error type is among all expert comments.
 - It provides a simple quantitative measure of segmentation issues from qualitative feedback.
 
