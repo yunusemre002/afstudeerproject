@@ -549,3 +549,104 @@ Cellpose has started to be tested on other images as well. It was observed that 
 ### Channel 2
 ![Channel 2](photos/for_logbook/z5-c2.png)
 
+
+# 28.05.2025
+1. Look at the mail of Carolina
+  - Is it also possible to include the intensity (for each channel) within each volume? That would be amazing
+  - Add annotations as… location within the cell (for example, if signal of aggregate colocalizes with signal of nucleus, nuclear localization)
+  - In aggrecount there are some criteria that you could use as a base for cellular localization, as for example, the perinuclear region, ect
+  - Including annotation regarding the shape of the aggregates (circular, elongated, etc)
+  - In the attachment I also included a figure in which there are some regions in the cells annotated as aggregate… but that is not an aggregate I believe, although the signal is very strong. I indicated with the white circles. This happens  because some cells express more mHTT than others and it is hard to “normalize” the signal to all cells. ~~Is there a way to train the algorithm to not recognize this regions as aggregates?~~
+
+??
+The dataset contains 20 images with 10 z-slices and 3 channels (cell, nuclei, aggregate), resulting in a total of 600 individual images.
+How can an expert evaluate these images, and what quality metrics are typically used in such assessments?
+
+
+# 🧪 Expert Segmentation Evaluation Form
+
+This form is used to evaluate the quality of segmentation for **Cells**, **Nuclei**, and **Aggregates** in microscopy images. Each image is reviewed individually by an expert.
+
+## ✅ Evaluation Criteria
+
+- **Approved (Y/N):** Is the segmentation acceptable for this class?
+- **Score (1–5):** Subjective quality score (1 = Poor, 5 = Excellent)
+- **Comments:** Any notable issues (e.g. missing segments, misalignment, oversegmentation)
+
+---
+
+## 📋 Evaluation Table (Sample of N = 5x10 images )
+
+| No | Image ID | Z-slice | Cell Approved (Y/N) | Cell Score (1–5) | Cell Errors                | Nuclei Approved (Y/N) | Nuclei Score (1–5) | Nuclei Errors             | Aggregate Approved (Y/N) | Aggregate Score (1–5) | Aggregate Errors           | Comments               |
+|----|----------|---------|----------------------|-------------------|----------------------------|------------------------|---------------------|---------------------------|----------------------------|-------------------------|---------------------------|------------------------|
+| 1  | IMG_001  | 1       | Y                    | 4                 | Missing segments           | N                      | 2                   | Misaligned masks          | Y                          | 5                       | None                      | Slice 1 good for cell  |
+| 2  | IMG_001  | 2       | Y                    | 5                 | None                      | Y                      | 4                   | None                      | Y                          | 4                       | Oversegmentation          | Slight blur on nuclei  |
+| 3  | IMG_001  | 3       | N                    | 2                 | Misaligned masks           | Y                      | 5                   | Blurred                   | N                          | 1                       | Missing segments          | Poor quality slice     |
+| …  | …        | …       | …                    | …                 | …                          | …                      | …                   | …                         | …                          | …                       | …                         | …                      |
+| 10 | IMG_020  | 10      | Y                    | 4                 | None                      | Y                      | 5                   | None                      | Y                          | 5                       | None                      | All good               |
+
+
+## 📊 Expert Segmentation Evaluation Metrics
+
+### Approval Rate (per class)
+
+- **Cell:**
+
+\[
+\text{Approval Rate}_{\text{cell}} = \frac{\text{Number of "Yes" for Cell Approved}}{\text{Total Number of Images}}
+\]
+
+- **Nuclei:**
+
+\[
+\text{Approval Rate}_{\text{nuclei}} = \frac{\text{Number of "Yes" for Nuclei Approved}}{\text{Total Number of Images}}
+\]
+
+- **Aggregate:**
+
+\[
+\text{Approval Rate}_{\text{aggregate}} = \frac{\text{Number of "Yes" for Aggregate Approved}}{\text{Total Number of Images}}
+\]
+
+---
+
+### Mean Quality Score (per class)
+
+- **Cell:**
+
+\[
+\text{Mean Score}_{\text{cell}} = \frac{\sum \text{Cell Scores}}{\text{Total Number of Images}}
+\]
+
+- **Nuclei:**
+
+\[
+\text{Mean Score}_{\text{nuclei}} = \frac{\sum \text{Nuclei Scores}}{\text{Total Number of Images}}
+\]
+
+- **Aggregate:**
+
+\[
+\text{Mean Score}_{\text{aggregate}} = \frac{\sum \text{Aggregate Scores}}{\text{Total Number of Images}}
+\]
+
+---
+### Expert Comments-Based Error Frequency Calculation
+
+#### Example Error Types
+
+- Missing segments  
+- Oversegmentation  
+- Misaligned masks  
+- Blurred / low quality inputs  
+- No issues / Clear segmentation  
+
+To evaluate segmentation quality based on expert comments, calculate the frequency of each error type as follows:
+
+\[
+\text{Frequency}_{\text{error type}} = \frac{\text{Number of comments mentioning error}}{\text{Total number of comments}}
+\]
+
+- This metric shows how common each error type is among all expert comments.
+- It provides a simple quantitative measure of segmentation issues from qualitative feedback.
+
