@@ -725,3 +725,27 @@ or
 | 2  | IMG_001  | 2       | 5                | No                      | No                     | No                     | No                         | 4                  | No                        | No                       | No                       | No                           | 4                    | No                          | Yes                          | No                           | No                             | Slight blur on nuclei |
 | 3  | IMG_001  | 3       | 2                | No                      | No                     | Yes                    | No                         | 5                  | No                        | No                       | No                       | Yes                          | 1                    | Yes                         | No                           | No                           | No                             | Poor quality slice  |
 |... | ...      | ...     | ...              | ...                     | ...                    | ...                    | ...                        | ...                | ...                       | ...                      | ...                      | ...                          | ...                  | ...                         | ...                          | ...                          | ...                            | ...                |
+
+
+
+# 04.06.25
+## Feedback van het %70 procent versie. 
+1. Hoewel de structuur prima is, is het taalgebruik regelmatig wollig of onnauwkeurig. Er staan enkele grammaticale fouten en dubbelzinnige zinnen in de gehele tekst
+2. De achtergrond is wel beschreven, maar blijft deels op oppervlakkig niveau. **Er mist een kritische afbakening van wat 'quantificatie' in dit onderzoeksdomein betekent.**
+3. **De onderzoeksvraag is onduidelijk geformuleerd** en wordt pas impliciet duidelijk in de methodesectie. **De rationale om deep learning in te zetten is summier en niet onderbouwd met bronnen.**
+4. Er zijn wetenschappelijke bronnen gebruikt, **maar de selectie is vaak wel verouderd (veel bronnen ouder dan 5 jaar).**
+5. De methodologie wordt op hoofdlijnen uitgelegd, maar details ontbreken. Dit maakt het moeilijk om het onderzoek te reproduceren. **??**
+6. Ethische aspecten worden nauwelijks behandeld.  foutmarges of bias in het model worden niet benoemd. **??**
+7. De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **??**
+9. De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **Look at this but i have mensioned**
+10. [A1] Het probleem (veel handmatig en 2D) wordt beschreven, maar stakeholder analyse is beperkt. Ja partijen worden benoemd, maar te oppervlakkig. **Steakholder Analysis??**
+11. [A2] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **?? JIJ HEBT GEEN DATASET GEEEEEN**
+12. [A3] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **GOOGLE DESIGN PATTERN ??** 
+13. [A4] Het prototype is getraind, maar de beschrijving van testprocedure is oppervlakkig. Validatie is minimaal en slechts op één metric gebaseerd. **i HAVE ASKT TO CAROLINA**
+14. [A5] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein.  **?? Well!**
+15. [B1] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein. **VRAAG MAAR CHATGPT**
+16. Selectie van onderzoekstechnieken wordt beschreven, maar redelijk beperkt. **??**
+17. [B3] Datasetvoorbereiding is beperkt beschreven. **?? DO MAAR. wat is de relatie tussen b3 en datasetvoorbreding. Het is ook bescrijven**
+18. [B4] Datasetvoorbereiding is beperkt beschreven. **wat is de probleem?**
+19. [C1] Er is een evaluatie van het model uitgevoerd. Het is wel erg makkelijk om telkens naar een geannoteerde dataset te wijzen, waren er geen alternatieven? **ER IS NIET**
+20. [c2,c3] Gebruikte methode zijn beschreven , maar het is redelijk oppervlakkig. **??**

@@ -48,8 +48,41 @@ labeled_aggregates, num_aggregates = label(aggregate_stack)
 # -------------------
 # NAPARI 3D 
 
-viewer = napari.Viewer(ndisplay=3)  # 3D gösterim için
-viewer.add_image(img_nuclei, name="Nucleus", colormap="gray", scale=(1, 1, 1))
-viewer.add_image(img_cellbody, name="Cell Body", colormap="green", blending="additive", scale=(1, 1, 1))
-viewer.add_labels(labeled_aggregates, name="Aggregates", opacity=0.6, scale=(1, 1, 1))
+# viewer = napari.Viewer(ndisplay=3)  # 3D gösterim için
+# viewer.add_image(img_nuclei, name="Nucleus", colormap="blue", scale=(1, 1, 1))
+# viewer.add_image(img_cellbody, name="Cell Body", colormap="gray", blending="additive", scale=(1, 1, 1))
+# viewer.add_labels(labeled_aggregates, name="Aggregates", opacity=0.6, scale=(1, 1, 1))
+# napari.run()
+
+
+# -------------------
+# NAPARI 3D 
+
+from skimage.measure import regionprops
+
+# Kullanıcıya bağlı olarak gösterilsin mi?
+show_labels = True  # ← bunu False yaparsan numaralar gösterilmez
+
+# Labeled aggregateler üzerinden centroid'leri bul
+regions = regionprops(labeled_aggregates)
+points = []
+labels = []
+
+for region in regions:
+    z, y, x = region.centroid
+    points.append([z, y, x])
+    labels.append(str(region.label))
+
+points = np.array(points)
+
+# Napari 3D görüntüleme
+viewer = napari.Viewer(ndisplay=3)
+viewer.add_image(img_nuclei, name="Nucleus", colormap="blue", scale=(1, 1, 1))
+viewer.add_image(img_cellbody, name="Cell Body", colormap="gray", blending="additive", scale=(1, 1, 1))
+viewer.add_labels(labeled_aggregates, name="Aggregates", opacity=0.9, scale=(1, 1, 1))
+
+# Eğer kullanıcı isterse agregat ID'leri göster
+if show_labels:
+    viewer.add_points(points, name='Aggregate IDs', size=3, face_color='red', text=labels, scale=(1, 1, 1))
+
 napari.run()
