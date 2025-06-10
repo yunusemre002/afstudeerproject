@@ -739,13 +739,117 @@ or
 7. De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **??**
 9. De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **Look at this but i have mensioned**
 10. [A1] Het probleem (veel handmatig en 2D) wordt beschreven, maar stakeholder analyse is beperkt. Ja partijen worden benoemd, maar te oppervlakkig. **Steakholder Analysis??**
-11. [A2] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **?? JIJ HEBT GEEN DATASET GEEEEEN**
+11. [A2] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **??GEEN DATASET**
 12. [A3] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **GOOGLE DESIGN PATTERN ??** 
 13. [A4] Het prototype is getraind, maar de beschrijving van testprocedure is oppervlakkig. Validatie is minimaal en slechts op één metric gebaseerd. **i HAVE ASKT TO CAROLINA**
 14. [A5] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein.  **?? Well!**
-15. [B1] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein. **VRAAG MAAR CHATGPT**
+15. [B1] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein. 
 16. Selectie van onderzoekstechnieken wordt beschreven, maar redelijk beperkt. **??**
 17. [B3] Datasetvoorbereiding is beperkt beschreven. **?? DO MAAR. wat is de relatie tussen b3 en datasetvoorbreding. Het is ook bescrijven**
-18. [B4] Datasetvoorbereiding is beperkt beschreven. **wat is de probleem?**
+18. [B4] ... **wat is de probleem?**
+19. [C1] Er is een evaluatie van het model uitgevoerd. Het is wel erg makkelijk om telkens naar een geannoteerde dataset te wijzen, waren er geen alternatieven? **ER IS NIET**
+20. [c2,c3] Gebruikte methode zijn beschreven , maar het is redelijk oppervlakkig. **??**
+
+
+## 3d CSV
+
+**Subject:** Clarification on Aggregate Feature Columns and 3D Quantification Approach
+
+Dear \[Expert's Name],
+
+I hope this message finds you well.
+
+I am currently working on the quantification of neural aggregates from 3D microscopy images related to Huntington’s disease. I would like to share some details about the feature columns in our aggregate analysis table and how these relate to the 3D segmentation and visualization. Your insights and feedback would be invaluable.
+
+Here is a brief explanation of the key columns and our underlying assumptions:
+
+---
+
+**1. aggregate\_3d\_label**
+
+* This is a unique identifier assigned to each aggregate object detected across the entire 3D image volume.
+* The 3D segmentation is performed by connecting 2D aggregate masks across consecutive z-slices based on pixel overlap, assuming that overlapping regions represent the same physical aggregate extended through multiple slices.
+* This global label helps us track the same aggregate through the z-stack.
+
+**2. z\_start and z\_end**
+
+* These specify the first and last z-slice indices where the aggregate appears.
+* They indicate the extent of the aggregate in the axial (depth) dimension.
+
+**3. location**
+
+* Refers to the spatial classification of the aggregate relative to cellular compartments, such as "nuclear", "perinuclear", or "cytoplasmic".
+* This is determined by overlapping the aggregate mask with segmented masks of nuclei and cell bodies.
+
+**4. shape**
+
+* A qualitative descriptor summarizing the aggregate’s morphology, such as “elongated”, “circular”, or “irregular”.
+* This is derived from measurements like eccentricity and circularity, mapped into categories for easier interpretation.
+
+**5. solidity**
+
+* Measures the smoothness or compactness of the aggregate shape, with values close to 1 indicating smooth, convex shapes, and lower values indicating irregular or fragmented shapes.
+
+**6. intensity**
+
+* The mean fluorescence intensity of the aggregate within the corresponding channel (e.g., the Huntington protein marker).
+* This quantifies the relative brightness and can indicate aggregate density or protein accumulation.
+
+---
+
+**How These Relate to the Images:**
+
+* Each aggregate label corresponds to a segmented object visible in the 3D microscopy stacks.
+* By reviewing the overlays where aggregates are highlighted and numbered per slice, you can verify how the 3D label is consistent across slices.
+* The location helps to understand the cellular context of the aggregates, critical for interpreting disease relevance.
+* Shape and solidity provide morphological insights which you can correlate visually with the contours drawn on the images.
+* Intensity values reflect the fluorescence signal strength, which can be cross-checked by examining the brightness of aggregates in the images.
+
+---
+
+**Assumptions and Limitations:**
+
+* We assume that overlapping regions in adjacent slices correspond to the same aggregate (3D object), which might not always hold perfectly due to imaging artifacts or segmentation errors.
+* Location classification depends on the quality of nuclei and cell body segmentation masks.
+* Intensity values are raw mean values and can be affected by imaging conditions and background noise.
+
+---
+
+As discussed in our last meeting, the 3D location, intensity values, Z-slice range (start and end), shape, and solidity of the detected aggregates have been extracted and saved in CSV files. I’ve now extracted this information for 4 different images, which is in the Google Drive.
+
+The CSV files are available at the Google Drive link I previously shared. Here is the link: https://drive.google.com/drive/folders/14zlTXXE_bRbeGACZLS-5oG4TucamT5l0?usp=drive_link
+
+These CSV files contain the required information. To verify the results, you can refer to the PDF files named 
+* ......_aggregate_3d_global_labeled.pdf, which include the labeled visualizations of the detected aggregates.
+
+Could you please analyze these and let me know:
+
+What percentage of the aggregates have been accurately detected in terms of location?
+
+What percentage have been correctly identified with a regular shape?
+
+
+# 10.06.25
+
+# 04.06.25
+## Feedback van het %70 procent versie. 
+- [ ] Hoewel de structuur prima is, is het taalgebruik regelmatig wollig of onnauwkeurig. Er staan enkele grammaticale fouten en dubbelzinnige zinnen in de gehele tekst
+- [x] De achtergrond is wel beschreven, maar blijft deels op oppervlakkig niveau. Er mist een kritische afbakening van wat 'quantificatie' in dit onderzoeksdomein betekent.
+- [x] De onderzoeksvraag is onduidelijk geformuleerd en wordt pas impliciet duidelijk in de methodesectie.
+- [x] De rationale om deep learning in te zetten is summier en niet onderbouwd met bronnen.
+- [ ] Er zijn wetenschappelijke bronnen gebruikt, maar de selectie is vaak wel verouderd (veel bronnen ouder dan 5 jaar). **?**
+- [ ] De methodologie wordt op hoofdlijnen uitgelegd, maar details ontbreken. Dit maakt het moeilijk om het onderzoek te reproduceren. **?**
+- [x] Ethische aspecten worden nauwelijks behandeld. foutmarges of bias in het model worden niet benoemd. [bkz. Model Bias]
+- [ ] De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **?**
+- [ ] De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **Look at this but i have mensioned**
+10. [A1] Het probleem (veel handmatig en 2D) wordt beschreven, maar stakeholder analyse is beperkt. Ja partijen worden benoemd, maar te oppervlakkig. **Steakholder Analysis??**
+11. [A2] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **??GEEN DATASET**
+12. [A3] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **GOOGLE DESIGN PATTERN ??** 
+13. [A4] Het prototype is getraind, maar de beschrijving van testprocedure is oppervlakkig. Validatie is minimaal en slechts op één metric gebaseerd. **i HAVE ASKT TO CAROLINA**
+14. [A5] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein.  **?? BKZ.Achievements and Societal Impact**
+15. [B1] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein. **BKZ. Ethical Considerations**
+16. Selectie van onderzoekstechnieken wordt beschreven, maar redelijk beperkt. **??**
+17. [B3] Datasetvoorbereiding is beperkt beschreven. **?? DO MAAR. wat is de relatie tussen b3 en datasetvoorbreding. Het is ook bescrijven**
+18. [B4] Het model is ontwikkeld, maar leunt wel erg sterk op cellpose **wat is de probleem?**
 19. [C1] Er is een evaluatie van het model uitgevoerd. Het is wel erg makkelijk om telkens naar een geannoteerde dataset te wijzen, waren er geen alternatieven? **ER IS NIET**
 20. [c2,c3] Gebruikte methode zijn beschreven , maar het is redelijk oppervlakkig. **??**
