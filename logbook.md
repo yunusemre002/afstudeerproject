@@ -837,11 +837,11 @@ What percentage have been correctly identified with a regular shape?
 - [x] De achtergrond is wel beschreven, maar blijft deels op oppervlakkig niveau. Er mist een kritische afbakening van wat 'quantificatie' in dit onderzoeksdomein betekent.
 - [x] De onderzoeksvraag is onduidelijk geformuleerd en wordt pas impliciet duidelijk in de methodesectie.
 - [x] De rationale om deep learning in te zetten is summier en niet onderbouwd met bronnen.
-- [ ] Er zijn wetenschappelijke bronnen gebruikt, maar de selectie is vaak wel verouderd (veel bronnen ouder dan 5 jaar). **?**
+- [x] Er zijn wetenschappelijke bronnen gebruikt, maar de selectie is vaak wel verouderd (veel bronnen ouder dan 5 jaar). **?**
 - [ ] De methodologie wordt op hoofdlijnen uitgelegd, maar details ontbreken. Dit maakt het moeilijk om het onderzoek te reproduceren. **?**
 - [x] Ethische aspecten worden nauwelijks behandeld. foutmarges of bias in het model worden niet benoemd. [bkz. Model Bias]
-- [ ] De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **?**
-- [ ] De gemaakte keuzes  worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **Look at this but i have mensioned**
+- [ ] De gemaakte keuzes worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **? Look at this but i have mensioned**
+- [ ] De discussie beperkt zich tot technische prestaties en mist reflectie op hoe dit werk bijdraagt aan het bredere domein van neurobiologie of AI in de gezondheidszorg. **Het begin met sociale impact**
 10. [A1] Het probleem (veel handmatig en 2D) wordt beschreven, maar stakeholder analyse is beperkt. Ja partijen worden benoemd, maar te oppervlakkig. **Steakholder Analysis??**
 11. [A2] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **??GEEN DATASET**
 12. [A3] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **GOOGLE DESIGN PATTERN ??** 

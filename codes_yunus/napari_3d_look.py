@@ -7,7 +7,7 @@ import napari
 # --------------
 # FILE IMPORT
 
-file_path = "/Users/demir/Documents/Hva_AI/afstudeerproject/E35_tif/20240312_CKR_Exp35_STHdhQ97HA_96h_+BafA_CCT1_635P_HA_580_A11_460L_1.tif"
+file_path = "/Users/demir/Documents/Hva_AI/afstudeerproject/E35_tif/20240312_CKR_Exp35_STHdhQ97HA_96h_+BafA_CCT1_635P_HA_580_A11_460L_2.tif"
 img = io.imread(file_path) # (9, 4, 1024, 1024)
 print(f'img       : {img.shape}')
 
