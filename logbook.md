@@ -4,6 +4,11 @@
 
 https://drive.google.com/drive/folders/1AnUnfZbJpZWdKvpxJOniLWIzyFzvSiDI?usp=drive_link
 
+
+# Other Results
+
+https://drive.google.com/drive/u/1/folders/14zlTXXE_bRbeGACZLS-5oG4TucamT5l0 
+
 # Some shotcuts
 ```conda activate napari-env```
 ```ctrl+K V```
@@ -838,18 +843,18 @@ What percentage have been correctly identified with a regular shape?
 - [x] De onderzoeksvraag is onduidelijk geformuleerd en wordt pas impliciet duidelijk in de methodesectie.
 - [x] De rationale om deep learning in te zetten is summier en niet onderbouwd met bronnen.
 - [x] Er zijn wetenschappelijke bronnen gebruikt, maar de selectie is vaak wel verouderd (veel bronnen ouder dan 5 jaar). **?**
-- [ ] De methodologie wordt op hoofdlijnen uitgelegd, maar details ontbreken. Dit maakt het moeilijk om het onderzoek te reproduceren. **?**
+- [x] De methodologie wordt op hoofdlijnen uitgelegd, maar details ontbreken. Dit maakt het moeilijk om het onderzoek te reproduceren. **?**
 - [x] Ethische aspecten worden nauwelijks behandeld. foutmarges of bias in het model worden niet benoemd. [bkz. Model Bias]
-- [ ] De gemaakte keuzes worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **? Look at this but i have mensioned**
-- [ ] De discussie beperkt zich tot technische prestaties en mist reflectie op hoe dit werk bijdraagt aan het bredere domein van neurobiologie of AI in de gezondheidszorg. **Het begin met sociale impact**
+- [x] De gemaakte keuzes worden genoemd, maar er ontbreekt gedegen onderbouwing via literatuur . Vaak lijkt gekozen op basis van beschikbaarheid i.p.v. afweging. **? Look at this but i have mensioned**
+- [x] De discussie beperkt zich tot technische prestaties en mist reflectie op hoe dit werk bijdraagt aan het bredere domein van neurobiologie of AI in de gezondheidszorg. **Het begin met sociale impact**
 10. [A1] Het probleem (veel handmatig en 2D) wordt beschreven, maar stakeholder analyse is beperkt. Ja partijen worden benoemd, maar te oppervlakkig. **Steakholder Analysis??**
 11. [A2] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **??GEEN DATASET**
 12. [A3] Er is een oplossing gepresenteerd, alternatieven of vervolgonderzoek zou uitgerbreider aan bod  moeten komen. **GOOGLE DESIGN PATTERN ??** 
-13. [A4] Het prototype is getraind, maar de beschrijving van testprocedure is oppervlakkig. Validatie is minimaal en slechts op één metric gebaseerd. **i HAVE ASKT TO CAROLINA**
-14. [A5] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein.  **?? BKZ.Achievements and Societal Impact**
-15. [B1] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein. **BKZ. Ethical Considerations**
+13. [x] [A4] Het prototype is getraind, maar de beschrijving van testprocedure is oppervlakkig. Validatie is minimaal en slechts op één metric gebaseerd. **i HAVE ASKT TO CAROLINA**
+14. [x] [A5] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein.  **?? BKZ.Achievements and Societal Impact**
+15. [x] [B1] Er is geen diepgaande reflectie op de ethiek of maatschappelijke waarde van AI in dit domein. **BKZ. Ethical Considerations**
 16. Selectie van onderzoekstechnieken wordt beschreven, maar redelijk beperkt. **??**
 17. [B3] Datasetvoorbereiding is beperkt beschreven. **?? DO MAAR. wat is de relatie tussen b3 en datasetvoorbreding. Het is ook bescrijven**
-18. [B4] Het model is ontwikkeld, maar leunt wel erg sterk op cellpose **wat is de probleem?**
-19. [C1] Er is een evaluatie van het model uitgevoerd. Het is wel erg makkelijk om telkens naar een geannoteerde dataset te wijzen, waren er geen alternatieven? **ER IS NIET**
-20. [c2,c3] Gebruikte methode zijn beschreven , maar het is redelijk oppervlakkig. **??**
+18. [x] [B4] Het model is ontwikkeld, maar leunt wel erg sterk op cellpose **wat is de probleem?**
+19. [x] [C1] Er is een evaluatie van het model uitgevoerd. Het is wel erg makkelijk om telkens naar een geannoteerde dataset te wijzen, waren er geen alternatieven? **ER IS NIET**
+20. [x] [c2,c3] Gebruikte methode zijn beschreven , maar het is redelijk oppervlakkig. **??**
